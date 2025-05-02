@@ -11,8 +11,11 @@ public enum ErrorCode {
     USER_NOT_FOUND("E003", "User not found"),
     REFRESH_TOKEN_EXPIRED("E004", "Refresh token expired"),
     TOKEN_INVALID("E005", "Invalid token"),
-    GENERAL_ERROR("E999", "Something went wrong");
+    GENERAL_ERROR("E999", "Something went wrong"),
+    DOCUMENT_ALREADY_EXISTS("D001", "Document with this title already exists for this user"),
 
+    ;
+    
     private final String code;
     private final String description;
 }

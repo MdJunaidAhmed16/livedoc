@@ -33,6 +33,7 @@ public class GlobalExceptionHandler {
             case INVALID_CREDENTIALS, USER_NOT_FOUND -> HttpStatus.UNAUTHORIZED;
             case REFRESH_TOKEN_EXPIRED, TOKEN_INVALID -> HttpStatus.UNAUTHORIZED;
             case GENERAL_ERROR -> HttpStatus.INTERNAL_SERVER_ERROR;
+            case DOCUMENT_ALREADY_EXISTS -> HttpStatus.NOT_ACCEPTABLE;
         };
     }
 }

@@ -9,4 +9,6 @@ import com.livedoc.livedoc.model.Document;
 
 public interface DocumentRespository extends JpaRepository<Document, UUID> {
     List<Document> findByOwnerId(UUID id);
+
+    boolean existsByOwnerIdAndTitle(UUID ownerId, String title);
 }
